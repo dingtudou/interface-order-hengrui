@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cimc.order.common.mapper.SysDataMappingMapper">
+
+    <resultMap id="BaseResultMap" type="com.cimc.order.common.domain.SysDataMapping">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="projectCode" column="project_code" jdbcType="VARCHAR"/>
+            <result property="mappingType" column="mapping_type" jdbcType="VARCHAR"/>
+            <result property="cimcCode" column="cimc_code" jdbcType="VARCHAR"/>
+            <result property="cimcValue" column="cimc_value" jdbcType="VARCHAR"/>
+            <result property="cimcDesc" column="cimc_desc" jdbcType="VARCHAR"/>
+            <result property="customerCode" column="customer_code" jdbcType="VARCHAR"/>
+            <result property="customerValue" column="customer_value" jdbcType="VARCHAR"/>
+            <result property="customerDesc" column="customer_desc" jdbcType="VARCHAR"/>
+            <result property="transmit" column="transmit" jdbcType="INTEGER"/>
+            <result property="status" column="status" jdbcType="INTEGER"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,project_code,mapping_type,
+        cimc_code,cimc_value,cimc_desc,
+        customer_code,customer_value,customer_desc,
+        transmit,status,remark,
+        create_time,update_time
+    </sql>
+</mapper>

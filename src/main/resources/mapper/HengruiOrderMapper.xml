@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cimc.order.hengrui.mapper.HengruiOrderMapper">
+
+    <resultMap id="BaseResultMap" type="com.cimc.order.hengrui.domain.HengruiOrder">
+            <id property="id" column="id" jdbcType="VARCHAR"/>
+            <result property="clientOrder" column="client_order" jdbcType="VARCHAR"/>
+            <result property="signature" column="signature" jdbcType="VARCHAR"/>
+            <result property="type" column="type" jdbcType="VARCHAR"/>
+            <result property="syncTime" column="sync_time" jdbcType="VARCHAR"/>
+            <result property="inputOrderPerson" column="input_order_person" jdbcType="VARCHAR"/>
+            <result property="inputOrderPhone" column="input_order_phone" jdbcType="VARCHAR"/>
+            <result property="inputOrderEmail" column="input_order_email" jdbcType="VARCHAR"/>
+            <result property="inputOrderTime" column="input_order_time" jdbcType="VARCHAR"/>
+            <result property="paidAccount" column="paid_account" jdbcType="VARCHAR"/>
+            <result property="itemNumber" column="item_number" jdbcType="VARCHAR"/>
+            <result property="sender" column="sender" jdbcType="VARCHAR"/>
+            <result property="insuredAmount" column="insured_amount" jdbcType="VARCHAR"/>
+            <result property="senderPhone" column="sender_phone" jdbcType="VARCHAR"/>
+            <result property="sendCompany" column="send_company" jdbcType="VARCHAR"/>
+            <result property="sendArea" column="send_area" jdbcType="VARCHAR"/>
+            <result property="sendDepartment" column="send_department" jdbcType="VARCHAR"/>
+            <result property="sendAddress" column="send_address" jdbcType="VARCHAR"/>
+            <result property="requireSendTime" column="require_send_time" jdbcType="VARCHAR"/>
+            <result property="receiver" column="receiver" jdbcType="VARCHAR"/>
+            <result property="receiverPhone" column="receiver_phone" jdbcType="VARCHAR"/>
+            <result property="receiverCompany" column="receiver_company" jdbcType="VARCHAR"/>
+            <result property="receiverArea" column="receiver_area" jdbcType="VARCHAR"/>
+            <result property="receiverDepartment" column="receiver_department" jdbcType="VARCHAR"/>
+            <result property="receiverAddress" column="receiver_address" jdbcType="VARCHAR"/>
+            <result property="requireGetTime" column="require_get_time" jdbcType="VARCHAR"/>
+            <result property="nucleinRequirement" column="nuclein_requirement" jdbcType="VARCHAR"/>
+            <result property="istemperature" column="isTemperature" jdbcType="VARCHAR"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="cimcCode" column="cimc_code" jdbcType="VARCHAR"/>
+            <result property="cimcMsg" column="cimc_msg" jdbcType="VARCHAR"/>
+            <result property="cimcOrderid" column="cimc_orderid" jdbcType="VARCHAR"/>
+            <result property="wmsReturnFlag" column="wms_return_flag" jdbcType="VARCHAR"/>
+            <result property="wmsReturnCode" column="wms_return_code" jdbcType="VARCHAR"/>
+            <result property="wmsReturnDesc" column="wms_return_desc" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,client_order,signature,
+        type,sync_time,input_order_person,
+        input_order_phone,input_order_email,input_order_time,
+        paid_account,item_number,sender,
+        insured_amount,sender_phone,send_company,
+        send_area,send_department,send_address,
+        require_send_time,receiver,receiver_phone,
+        receiver_company,receiver_area,receiver_department,
+        receiver_address,require_get_time,nuclein_requirement,
+        isTemperature,remark,create_time,
+        update_time,cimc_code,cimc_msg,
+        cimc_orderid,wms_return_flag,wms_return_code,
+        wms_return_desc
+    </sql>
+</mapper>

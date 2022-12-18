@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cimc.order.hengrui.mapper.HengruiTestInfoMapper">
+
+    <resultMap id="BaseResultMap" type="com.cimc.order.hengrui.domain.HengruiTestInfo">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="hdId" column="hd_id" jdbcType="VARCHAR"/>
+            <result property="topicsOfClinicalTrials" column="topics_of_clinical_trials" jdbcType="VARCHAR"/>
+            <result property="researchNumber" column="research_number" jdbcType="VARCHAR"/>
+            <result property="testCenter" column="test_center" jdbcType="VARCHAR"/>
+            <result property="testCenterNumber" column="test_center_number" jdbcType="VARCHAR"/>
+            <result property="researcher" column="researcher" jdbcType="VARCHAR"/>
+            <result property="sponsor" column="sponsor" jdbcType="VARCHAR"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,hd_id,topics_of_clinical_trials,
+        research_number,test_center,test_center_number,
+        researcher,sponsor,create_time,
+        update_time
+    </sql>
+</mapper>

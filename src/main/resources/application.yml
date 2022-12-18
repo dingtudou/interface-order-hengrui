@@ -1,0 +1,19 @@
+server:
+  port: 8174
+  servlet:
+    context-path: /hengrui
+spring:
+  profiles: 
+    #当前环境 开发测试dev 生产环境pro
+    active: pro
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+
+
+
+

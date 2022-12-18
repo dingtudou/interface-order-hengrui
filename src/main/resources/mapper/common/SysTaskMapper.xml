@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cimc.order.common.mapper.SysTaskMapper">
+
+    <resultMap id="BaseResultMap" type="com.cimc.order.common.domain.SysTask">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="projectCode" column="project_code" jdbcType="VARCHAR"/>
+            <result property="jobName" column="job_name" jdbcType="VARCHAR"/>
+            <result property="jobGroup" column="job_group" jdbcType="VARCHAR"/>
+            <result property="cronExpression" column="cron_expression" jdbcType="VARCHAR"/>
+            <result property="beanClass" column="bean_class" jdbcType="VARCHAR"/>
+            <result property="methodName" column="method_name" jdbcType="VARCHAR"/>
+            <result property="status" column="status" jdbcType="INTEGER"/>
+            <result property="description" column="description" jdbcType="VARCHAR"/>
+            <result property="concurrent" column="concurrent" jdbcType="VARCHAR"/>
+            <result property="springBean" column="spring_bean" jdbcType="VARCHAR"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,project_code,job_name,
+        job_group,cron_expression,bean_class,
+        method_name,status,description,
+        concurrent,spring_bean,create_time,
+        update_time
+    </sql>
+</mapper>

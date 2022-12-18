@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cimc.order.hengrui.mapper.HengruiDetailMapper">
+
+    <resultMap id="BaseResultMap" type="com.cimc.order.hengrui.domain.HengruiDetail">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="hdId" column="hd_id" jdbcType="VARCHAR"/>
+            <result property="mainId" column="main_id" jdbcType="VARCHAR"/>
+            <result property="productName" column="product_name" jdbcType="VARCHAR"/>
+            <result property="packages" column="packages" jdbcType="INTEGER"/>
+            <result property="unit" column="unit" jdbcType="VARCHAR"/>
+            <result property="temperatureRange" column="temperature_range" jdbcType="VARCHAR"/>
+            <result property="specification" column="specification" jdbcType="VARCHAR"/>
+            <result property="drugSave" column="drug_save" jdbcType="VARCHAR"/>
+            <result property="drBatchNumbers" column="dr_batch_numbers" jdbcType="VARCHAR"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+            <result property="lotNo" column="lot_no" jdbcType="VARCHAR"/>
+            <result property="drNumber" column="dr_number" jdbcType="VARCHAR"/>
+            <result property="count" column="count" jdbcType="INTEGER"/>
+            <result property="termValidity" column="term_validity" jdbcType="VARCHAR"/>
+            <result property="sampleType" column="sample_type" jdbcType="VARCHAR"/>
+            <result property="goodsLength" column="goods_length" jdbcType="VARCHAR"/>
+            <result property="goodsWidth" column="goods_width" jdbcType="VARCHAR"/>
+            <result property="goodsHigh" column="goods_high" jdbcType="VARCHAR"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,hd_id,main_id,
+        product_name,packages,unit,
+        temperature_range,specification,drug_save,
+        dr_batch_numbers,remark,lot_no,
+        dr_number,count,term_validity,
+        sample_type,goods_length,goods_width,
+        goods_high,create_time,update_time
+    </sql>
+</mapper>

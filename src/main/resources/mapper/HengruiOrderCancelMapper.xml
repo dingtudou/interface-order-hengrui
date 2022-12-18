@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cimc.order.hengrui.mapper.HengruiOrderCancelMapper">
+
+    <resultMap id="BaseResultMap" type="com.cimc.order.hengrui.domain.HengruiOrderCancel">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="clientOrder" column="client_order" jdbcType="VARCHAR"/>
+            <result property="type" column="type" jdbcType="VARCHAR"/>
+            <result property="logisticsOrderNo" column="logistics_order_no" jdbcType="VARCHAR"/>
+            <result property="itemNumber" column="item_number" jdbcType="VARCHAR"/>
+            <result property="itemId" column="item_id" jdbcType="VARCHAR"/>
+            <result property="cancelOrderPerson" column="cancel_order_person" jdbcType="VARCHAR"/>
+            <result property="cancelOrderPhone" column="cancel_order_phone" jdbcType="VARCHAR"/>
+            <result property="cancelReason" column="cancel_reason" jdbcType="VARCHAR"/>
+            <result property="syncTime" column="sync_time" jdbcType="VARCHAR"/>
+            <result property="cimcCode" column="cimc_code" jdbcType="VARCHAR"/>
+            <result property="cimcMsg" column="cimc_msg" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,client_order,type,
+        logistics_order_no,item_number,item_id,
+        cancel_order_person,cancel_order_phone,cancel_reason,
+        sync_time,cimc_code,cimc_msg
+    </sql>
+</mapper>
